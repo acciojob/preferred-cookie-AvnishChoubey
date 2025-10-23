@@ -7,8 +7,8 @@ function getCookie(name) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	const fontsize = getCookie("fontSize");
-	const fontcolor = getCookie('fontColor');
+	const fontsize = getCookie("fontsize");
+	const fontcolor = getCookie('fontcolor');
 	const root = document.documentElement;
 	root.style.setProperty('--fontsize', `${fontsize}px`);
 	root.style.setProperty('--fontcolor', `${fontcolor}`);
@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById('submit').addEventListener('click', () => {
 	const fontSize = document.getElementById('fontsize');
 	const fontColor = document.getElementById('fontcolor');
-	document.cookie = `fontSize=${fontSize.value}`;
-	document.cookie = `fontColor=${fontColor.value}`;
+	document.cookie = `fontsize=${fontSize.value}`;
+	document.cookie = `fontcolor=${fontColor.value}`;
 });
