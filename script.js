@@ -7,8 +7,8 @@ function getCookie(name) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	const fontsize = getCookie("fontsize");
-	const fontcolor = getCookie('fontcolor');
+	const fontsize = getCookie("fontSize");
+	const fontcolor = getCookie('fontColor');
 	const root = document.documentElement;
 	root.style.setProperty('--fontsize', `${fontsize}px`);
 	root.style.setProperty('--fontcolor', `${fontcolor}`);
